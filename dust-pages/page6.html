@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <title>In-Browser JS & Dev-Console</title>
+    <title>Arrays & Objects</title>
     <style>
         body{
             font-family: 'Ubuntu', sans-serif;
@@ -21,18 +21,18 @@
             font-size: 1.4rem;
             width: 50%;
             background-color: black;
+            border-radius: 10px;
             border: 2px solid green;
-            border-radius: 25px;
             transition: all ease-in-out 0.25s;
             color: green;
             text-decoration: none;
-
         }
         .back a:hover{
             background-color: yellowgreen;
             border: 2px solid green;
             width: 100%;
         }
+
         .container img{
             width: 45%;
             height: 45%;
@@ -46,15 +46,29 @@
     </div>
     <div class="container">
         <!-- WRITE YOUR CONTENT HERE -->
-        <h1>In-Browser JS & Dev-Console</h1>
-        <img src="img/page1.png" alt="">
+        <h1>Arrays & Objects</h1>
+        <img src="img/page6.png" alt="">
     </div>
     <script>
         // WRITE YOUR SCRIPT HERE
         console.log('Hello World')
-        var a=2
-        var b=6
-        console.log(a+b)
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        let employee = {
+            name: "Direwxlf",
+            salary: 10,
+            "data 1": "Gamer",
+            "data 2": "Dev"
+        };
+
+        let names = [1,2,3, "Direwxlf", undefined];
+        let dict = new Array(1,6,3, "Direwxlf", undefined);
+        let arr = new Array(20);
+        console.log(dict.sort())
     </script>
 </body>
 </html>

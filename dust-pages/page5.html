@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Scope, If-else & SwitchCase</title>
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .back {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .back a {
+            padding: 1.2rem;
+            font-size: 1.4rem;
+            width: 50%;
+            background-color: black;
+            border-radius: 10px;
+            border: 2px solid green;
+            transition: all ease-in-out 0.25s;
+            color: green;
+            text-decoration: none;
+        }
+
+        .back a:hover {
+            background-color: yellowgreen;
+            border: 2px solid green;
+            width: 100%;
+        }
+        .container img{
+            width: 45%;
+            height: 45%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <a href="../index.html">Go Back!
+        </a>
+    </div>
+    <div class="container">
+        <!-- WRITE YOUR CONTENT HERE -->
+        <h1>Scope, If-else & SwitchCase</h1>
+        <img src="img/page5.png" alt="">
+        
+    </div>
+    <script>
+        // WRITE YOUR SCRIPT HERE
+        console.log('Hello World')
+
+        var string1 = "This is myString1"
+        var string1 = "This is myString2"
+        
+        let string2 = "This is myString3"
+        //let string2 = "This is myString4"
+
+        //Gives Declaration Error as "let" won't let you declare more than once.
+
+        const a = "This can't be altered.";
+        //a = "Change?";
+        //Gives Assignment Error
+
+        //IF-ELSE
+        let age = 19;
+        if(age>18){
+            console.log("You can Drink.");
+        }
+        else if(age == 18){
+            console.log("You are on the middle ground.")
+        }
+        else{
+            console.log("You can't Drink");
+        }
+
+        //SwitchCase
+        const cups = 3;
+        switch(cups){
+            case 1:
+                console.log("This is cup 1.");
+                break;
+            case 2:
+                console.log("This is cup 2.");
+                break;
+            case 3:
+                console.log("This is cup 3.");
+                break;
+            case 4:
+                console.log("This is cup 4.");
+                break;
+            default:
+                console.log("None of them.")
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

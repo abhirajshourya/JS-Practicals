@@ -25,11 +25,13 @@ body{
     transition: all ease-in-out 0.15s;
     text-decoration: none;
     color: black;
+    background-color: yellowgreen;
     width: 50%;
-    text-align: center;
+    text-align: left;
     border-radius: 25px;
 }
 .box:hover{
-    background-color: yellowgreen;
+    background-color: black;
+    color: white;
     width: 75%;
 }

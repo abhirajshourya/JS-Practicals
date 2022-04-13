@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <title>TemplateHead</title>
+    <title>String Functions</title>
     <style>
         body{
             font-family: 'Ubuntu', sans-serif;
@@ -37,7 +37,6 @@
             height: 45%;
         }
     </style>
-    <script src="scripts/page.js"></script>
 </head>
 <body>
     <div class="back">
@@ -46,11 +45,58 @@
     </div>
     <div class="container">
         <!-- WRITE YOUR CONTENT HERE -->
-        <h1>TemplateHead</h1>
+        <h1>String Functions</h1>
+        <img src="img/page4.png" alt="">
     </div>
     <script>
         // WRITE YOUR SCRIPT HERE
-        console.log('Hello World')
+        console.log('Hello World');
+        
+        
+        str = 'This is A String.';
+        
+        //First Occurrence of a Substring
+        var position = str.indexOf('is')
+        console.log(position);
+        
+        //Last Occurrence of a Substring
+        position = str.lastIndexOf('is')
+        console.log(position);
+
+        //Substring using slicing
+        var sub = str.slice(1,6);
+        console.log(sub);
+        
+        //Substring
+        var sub = str.substring(1,6);
+        console.log(sub);
+        
+        //Substring
+        var sub = str.substr(10,5);
+        console.log(sub);
+
+        //Repace String substrings
+        var replacestr = str.replace('String', 'Direwxlf')
+        console.log(replacestr);
+        console.log(str);
+
+        //Cases
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //Concat
+        console.log(str + replacestr)
+        
+        //Trimming Spaces
+        var strWithWhiteSpaces = `          JOGGG                      ING         `
+        console.log(strWithWhiteSpaces)
+        console.log(strWithWhiteSpaces.trim()
+        )
+
+        //charAt
+        console.log(str.charAt(2))
+
+        
     </script>
 </body>
 </html>
