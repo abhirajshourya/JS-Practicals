@@ -5,9 +5,18 @@ body{
 
 .head{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-shadow: 2px 2px 2px yellowgreen;
+    margin: 20px;
+}
+
+.head p{
+    color: red;
+    text-shadow: 1px 1px 1px black;
+    border: 0.5px solid red;
+    padding: 5px;
 }
 
 .container{
